@@ -7,8 +7,9 @@ public class SpotifyEditorTarget : TargetRules
 {
 	public SpotifyEditorTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+        Type = TargetType.Editor;
+		DefaultBuildSettings = BuildSettingsVersion.V5;
 
 		ExtraModuleNames.AddRange( new string[] { "Spotify" } );
 	}
