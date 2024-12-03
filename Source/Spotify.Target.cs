@@ -7,6 +7,7 @@ public class SpotifyTarget : TargetRules
 {
 	public SpotifyTarget(TargetInfo Target) : base(Target)
 	{
+ 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
